@@ -161,8 +161,28 @@ Hello channel!
 
 Next with your bot still running in your terminal, send a message in the #general channel.
 You should notice your new #general channel message being logged by your bot.
-
-
+Your log should look something like this:
+```
+gregs-mac:simplebot$ sh run.sh
+{ type: 'hello' }
+{ text: 'Hello channel!',
+  username: 'simplebot',
+  type: 'message',
+  subtype: 'bot_message',
+  channel: 'C0G0VF4F6',
+  ts: '1449506019.000008' }
+{ type: 'presence_change',
+  user: 'U0G0VP5PW',
+  presence: 'active' }
+{ type: 'user_typing', channel: 'C0G0VF4F6', user: 'U070N0C6T' }
+{ type: 'user_typing', channel: 'C0G0VF4F6', user: 'U070N0C6T' }
+{ type: 'message',
+  channel: 'C0G0VF4F6',
+  user: 'U070N0C6T',
+  text: 'It worked.',
+  ts: '1449506049.000009',
+  team: 'T06V9UG3U' }
+```
 
 
 
