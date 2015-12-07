@@ -184,5 +184,50 @@ gregs-mac:simplebot$ sh run.sh
   team: 'T06V9UG3U' }
 ```
 
+Now that things are running ok locally, let's deploy your bot to a hosting service.
+
+Steps to deploy your bot on Heroku:
+
+Create a "Profile" file
+```
+worker: node bin/bot.js
+```
+
+Create a new app on Heroku.
+```
+https://dashboard.heroku.com/new
+```
+
+Next add the settings your bot will need
+```
+BOT_API_KEY <your slack bot API Token>
+BOT_NAME simplebot
+```
+
+Run the following commands to setup and commit the project to git
+```
+git init
+echo "node_modules/" >> .gitignore
+echo "run.sh" >> .gitignore
+git add --all
+git commit -am "initial commit"
+```
+
+Log into Heroku
+```
+heroku login
+```
+
+Push your project up to Heroku. This should also start the app.
+```
+heroku git:remote -a <your Heroku app name goes here>
+git push heroku master
+```
+
+Now check your Heroku logs
+```
+heroku logs
+```
+
 
 
