@@ -230,7 +230,7 @@ heroku logs
 ```
 
 Much thanks to Luciano Mammino (@loige) for his detailed notes on all of this:
-His blog describes a Chuck Norris Bot that shows how to create a fully functional bot, based by a sqlite3 db.
+His blog describes a Chuck Norris Bot that shows how to create a fully functional bot, backed by a sqlite3 db.
 ```
 https://scotch.io/tutorials/building-a-slack-bot-with-node-js-and-chuck-norris-super-powers
 ```
