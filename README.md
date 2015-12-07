@@ -18,7 +18,7 @@ Initialize your nodejs project - This will create a package.json file
 npm init
 ```
 
-Add the slackbots package
+Install the slackbots package
 ```
 npm i --save slackbots
 ```
